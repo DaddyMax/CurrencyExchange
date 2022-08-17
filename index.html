@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Актуальный курс валют</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Покупка</th>
+                    <th>Продажа</th>
+                </tr>
+                <tr>
+                    <th>USD</th>
+                    <!-- <th class="usd_buy">err</th>
+                <th class="usd_sell">err</th> -->
+                    <th class="usd_buy" id="usd_buy">36.65</th>
+                    <th class="usd_sell" id="usd_sell">37.4995</th>
+                </tr>
+                <tr>
+                    <th>EUR</th>
+                    <!-- <th class="eur_buy">err</th>
+                <th class="eur_sell">err</th> -->
+                    <th class="eur_buy" id="eur_buy">37.3</th>
+                    <th class="eur_sell" id="eur_sell">38.1607</th>
+                </tr>
+                <tr class="mono">
+                    <th class="by_mono" colspan="3">
+                        <i>*по данным <a href="http://monobank.ua">monobank.ua</a></i>
+                    </th>
+                </tr>
+
+            </table>
+
+        </header>
+        <section>
+            <div class="exch1">
+                <input type="text" class="exval" inputmode="numeric" maxlength="10" name="input1" id="input1" value="">
+                <select name="exchange1" id="exchange1">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                </select>
+            </div>
+            <div class="symbol">
+                <img src="exch.png" alt="">
+            </div>
+            <div class="exch2">
+                <input type="text" class="exval" inputmode="numeric" maxlength="10" name="input2" id="input2" value="">
+                <select name="exchange2" id="exchange2">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                </select>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
