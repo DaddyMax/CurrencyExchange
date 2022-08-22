@@ -6,6 +6,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+body {
+    min-width: 320px;
+}
+
 header {
     width: 350px;
     margin: 0 auto;
@@ -69,11 +73,7 @@ select {
 }
 
 .symbol {
-    font-size: 20px;
     margin: 0 20px 0 20px;
-}
-
-.symbol img {
     width: 30px;
     height: 30px;
 }
@@ -83,4 +83,43 @@ main {
     margin: 20px auto 0 auto;
     padding: 25px;
     box-shadow: 0 0 3px #aaa;
+}
+
+@media (max-width: 510px) {
+    main {
+        width: 350px;
+    }
+
+    section {
+        width: 320px;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    section>div {
+        margin: 0 auto 15px auto;
+    }
+
+    .symbol {
+        margin: 0 auto 15px auto;
+    }
+}
+
+@media (max-width: 415px) {
+    main {
+        width: 250px;
+    }
+
+    section {
+        width: 220px;
+        margin-top: 30px;
+    }
+
+    header {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
